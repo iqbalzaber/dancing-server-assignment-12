@@ -165,7 +165,7 @@ app.put("/users/:email", async (req, res) => {
       const role = 'instructor';
     
       const result = await userCollection.find({ role }).toArray();
-    
+    console.log(result)
       res.send(result);
     });
     // carts operation --
