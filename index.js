@@ -59,9 +59,7 @@ async function run() {
     const instructorClassCollection = client.db("danceSchoolDB").collection("instructorClasses");
     const userCollection = client.db("danceSchoolDB").collection("users");
     const paymentCollection = client.db("danceSchoolDB").collection("payments");
-    const instructorCollection = client
-      .db("danceSchoolDB")
-      .collection("instructors");
+    const instructorCollection = client.db("danceSchoolDB").collection("instructors");
     const cartCollection = client.db("danceSchoolDB").collection("carts");
 // jwt token 
     app.post("/jwt", (req, res) => {
